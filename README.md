@@ -154,6 +154,34 @@ A Yew `Project` contains 1 or more named archives and a README.md file.
 
 ### alpha.5 Version Control
 
-A Yew project can contain a git directory and .gitignore file at the root. 
+A Yew project can contain a `.git` directory and `.gitignore` file at the root. 
 
+### alpha.6 lists
 
+A special directory at a root named `lists` is reserved for 
+storing arbitrary lists. A list is expected to be modified anachronistically.
+
+#### alpha.6.1 format
+
+Each file with a `txt` extension form a list.
+
+`md` based list may be supported in the future.
+
+#### alpha.6.2 elements
+
+Each non-empty line in a `txt` file is an element of the list.
+
+#### alpha.6.2 directory pattern 
+
+Users can use an arbitrary structure of subdirectories.
+Yew recurses through the directory for all valid `list`.
+
+#### alpha.6.3 implementation limits 
+
+lists
+: 1000
+
+folder depth
+: 10 
+
+Behavior beyond these limits are left to implementation. 
