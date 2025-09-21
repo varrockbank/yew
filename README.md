@@ -49,7 +49,7 @@ When machine-parseability is a feature, the specification will be moved into a s
 
 ## Specification
 
-### § v1alpha.0
+### § alpha.0
 
 A Yew specification, or Yew Spec for short, defines the conventions and software interop for a given
 version of Yew. A Yew Spec consists of a sequence of explanation uniquely identified by `x.*` 
@@ -82,26 +82,30 @@ release_date
 - `alpha.y` labels, where y is a natural number, are for major definitions
 - `alpha.y.z` labels, where z is a natural number, are correlaries of y
 
-### § alpha.1 Format
+### § alpha.1 logs
 
-(It is assumed that) All relevant user documents are valid markdown files with the file extension `.md`
+Logs are chronological. The granularity is on a day-to-day basis.
+Each log file should correspond to a specific day.
 
-#### § alpha.1.1
+Users can modify a log file as much as they want on a given day, but 
+should avoid modify a log file once the day is over. 
 
-Files without `md` extensions are ignored.
+### § alpha.1.1 log format
 
-#### § alpha.1.2
+`md` extension and markdown is used for log files.  Files without `md` extensions are ignored.
 
-Files with `md` extension are assumed to be valid Markdown without validation.
+#### § alpha.1.2 log file validation 
 
-### § alpha.2 Archives
+Files with `md` extension are assumed to be valid Markdown, without validation.
+
+#### § alpha.1.3 directory structure and file pattern
 
 Every file should be named `YYYY_MM_DD.md` where `YYYY`is the year, `MM` is the month, `DD` is the day.
 
 This file should be placed in the following directory: `YYYY/MM`. i.e. `2025/09/2025_09_21.md`
 
 The following files collectively form an instance of Yew `Archive`. 
-`README.md` is user specified commentary about the Archive 
+A optional `README.md` can contain user specified commentary about the Archive
 
 ```
    README.md
@@ -121,39 +125,35 @@ following example "my_first_archive"
           2025_09_21.md
 ```
 
-### § alpha.2.1
+### § alpha.1.4
 
 Files that do not match the pattern `YYYY/MM/DD/YYYY_MM_DD.md` are to be ignored by the Yew toolchain. 
 
 This includes the following example: `2025/1/31` and `2025/12/1`.
 
-### § alpha.2.2 Date 
+### § alpha.1.5 Dates 
 
 YYYY/MM/DD are not checked the be valid days. For example: 02/29 would be a valid date on a leap year but
 invalid on a regular year. Yew does not validate 2025/02/29 to be a valid date.
 
 In the future, Yew will validate the date. 
 
-### § alpha.2.3 Time 
+### § alpha.1.6 Time 
 
 Yew does not care about time of day. 
 
-### § alpha.2.3 
+### § alpha.1.7 
 
-`YYYY-MM-DD.md` may be supported in the future. 
+`YYYY-MM-DD.md` may be supported in the future.
 
-### § alpha.2.4 
-
-Metadata in README.md is ignored
-
-### § alpha.3 Media, pictures and non .MD files 
+### § alpha.2 Media, pictures and non .MD files 
 
 Currently unsupported and ignored. Perhaps when we want to have a collection of files on a given
 day, we will reintroduce the `YYYY/MM/DD/` archive path.
 
-### § alpha.4 A Yew Project 
+### § alpha.3 A Yew Project 
 
-A Yew `Project` contains 1 or more named archives and a README.md file.
+A Yew `Project` contains 1 or more named log archives and a README.md file.
 
 ```
    README.md 
@@ -165,31 +165,34 @@ A Yew `Project` contains 1 or more named archives and a README.md file.
       ...
 ```
 
-### § alpha.5 Version Control
+### § alpha.4 Version Control
+
+Currently, this comes free because of plaintext files. 
 
 A Yew project can contain a `.git` directory and `.gitignore` file at the root. 
 
-### § alpha.6 lists
+### § alpha.5 lists
 
-A special directory at a root named `lists` is reserved for 
-storing arbitrary lists. A list is expected to be modified anachronistically.
+A special directory at a root named `lists` is reserved for arbitrary lists. 
+A list is expected to be modified anachronistically.
+Each list is encoded in a list file. 
 
-#### § alpha.6.1 format
+#### § alpha.5.1 format of list files 
 
 Each file with a `txt` extension form a list.
 
 `md` based list may be supported in the future.
 
-#### § alpha.6.2 elements
+#### § alpha.5.2 elements
 
 Each non-empty line in a `txt` file is an element of the list.
 
-#### § alpha.6.2 directory pattern 
+#### § alpha.5.2 directory pattern 
 
 Users can use an arbitrary structure of subdirectories.
 Yew recurses through the directory for all valid `list`.
 
-#### § alpha.6.3 implementation limits 
+#### § alpha.5.3 implementation limits 
 
 lists
 : 1000
@@ -197,7 +200,7 @@ lists
 folder depth
 : 10 
 
-Behavior beyond these limits are left to implementation.
+Behavior beyond these limits are at the discretion of implementation.
 
 
 
