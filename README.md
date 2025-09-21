@@ -1,10 +1,20 @@
-## Motivation
+# Motivation
 
-This project stem from a desire to log my personal diary and incremental knowledge development
-on a day-by-day basis in a more organized manner than scattered, unstructured and ephemeral ad-hoc notes.
+I started grad school and sought to consistently snapshot my thoughts, both 
+private and intellectual. I hope to retroactively pinpoint the specific 
+time frame I developed certain ideas.
 
-I sought a structured software-backed workflow to facilitate holding the belief that such an investment
-will streamline and encourage a more complete set of logs.
+Before this, I had a scattered and unstructured set of ad-hoc notes
+that would in all likelihood be lost in the entropy. The only way to search
+through the documents is to comprehensively look through them all. This
+mess also hindered incrementally building knowledge. It was taxing on my brain's 
+CPU and memory. 
+
+Software-as-a-services come and go making the value prop of solving this problem.
+The two issues I face with these services is data portability and input lag.
+
+A knowledge management system is more than logging daily stream of thoughts in chronological order.
+It should have caches, the most common of which is lists of stuff such as a todo list.
 
 ## Overarching Ideas
 
@@ -15,24 +25,27 @@ will streamline and encourage a more complete set of logs.
 5. Accessible from small (smartphones) and large devices (laptops) on slow internet connection
 6. Yew versions aim for backward compatibility
 7. Strive to be a specification rather than implementation 
+8. Encourages information retrieval (search) and organization (tags) 
+9. Do not chase trends or appeal to compatibility for the sake of compatibility
 
-This projects strives to be a specification, rather than implementation, around a set of conventions on which
-existing software toolchains can readily operate. Perhaps custom software will be needed but it connected 
-as an optional extension that does not break backwards compatibility.
+Yew leans towards specification, rather than implementation, on workflow conventions as to 
+that interop with readily available software/toolchains, namely on Unix systems. 
 
-Yew aims to be recursively specified. This project serves as a valid Yew Project.  
+Custom implementation and integration should be a backwards compatible extension.
+
+This repository should be "self-hosting" and serve as a valid Yew Project.  
 
 ## Legal
 
-No support is provided for this system. The author bears 
-no responsibility. 
+No support is provided. The author bears no responsibility for this system's usage. 
+Don't plagiarize without citation. 
 
 ## Yew 
 
-This project is named Yew takes inspiration from the Yew tree from RuneScape. 
+The name takes inspiration from the tree popularized by RuneScape. 
 
-Currently, the alpha Yew specification is not machine parseable. When it is meant to be machine parseable,
-the specification will be moved into a separate file.
+Currently, Yew specification is not machine parseable. 
+When machine-parseability is a feature, the specification will be moved into a separate file.
 
 ## Specification
 
@@ -133,12 +146,12 @@ Yew does not care about time of day.
 
 Metadata in README.md is ignored
 
-### alpha.3 Media, pictures and non .MD files 
+### § alpha.3 Media, pictures and non .MD files 
 
 Currently unsupported and ignored. Perhaps when we want to have a collection of files on a given
 day, we will reintroduce the `YYYY/MM/DD/` archive path.
 
-### alpha.4 A Yew Project 
+### § alpha.4 A Yew Project 
 
 A Yew `Project` contains 1 or more named archives and a README.md file.
 
@@ -152,31 +165,31 @@ A Yew `Project` contains 1 or more named archives and a README.md file.
       ...
 ```
 
-### alpha.5 Version Control
+### § alpha.5 Version Control
 
 A Yew project can contain a `.git` directory and `.gitignore` file at the root. 
 
-### alpha.6 lists
+### § alpha.6 lists
 
 A special directory at a root named `lists` is reserved for 
 storing arbitrary lists. A list is expected to be modified anachronistically.
 
-#### alpha.6.1 format
+#### § alpha.6.1 format
 
 Each file with a `txt` extension form a list.
 
 `md` based list may be supported in the future.
 
-#### alpha.6.2 elements
+#### § alpha.6.2 elements
 
 Each non-empty line in a `txt` file is an element of the list.
 
-#### alpha.6.2 directory pattern 
+#### § alpha.6.2 directory pattern 
 
 Users can use an arbitrary structure of subdirectories.
 Yew recurses through the directory for all valid `list`.
 
-#### alpha.6.3 implementation limits 
+#### § alpha.6.3 implementation limits 
 
 lists
 : 1000
@@ -184,4 +197,10 @@ lists
 folder depth
 : 10 
 
-Behavior beyond these limits are left to implementation. 
+Behavior beyond these limits are left to implementation.
+
+
+
+
+
+
