@@ -265,5 +265,7 @@ A special `scratchpad.md` can exist at the root directory.
 In a multi-user Yew repo, the scratchpad can be used to leave notes 
 behind for other developers like a sticky note on the refridgerator.
 
+It is recommended to `gitignore` the scratchpad.md file.
+
 Yew implementations should complain when the scratchpad is stale for too long.
 
