@@ -9,3 +9,4 @@
 [ ] have a story on spreadsheets
 [ ] have a story on other office suites
 [ ] have a story on integration with Remarkable devices
+[ ] evaluate if Yew can really just be an Obsidian template

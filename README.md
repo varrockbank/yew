@@ -12,7 +12,7 @@ on my "first brain" which was unreliable and taxing.
 
 I hope to offload the cognitive overload by "writing the data to disk".
 This "second brain" and "personal knowledge management system" includes 
-a few different workflows / flow states which require different
+a few different workflows / flow states / spaces which require different
 data structures.
 
 1. workflow: journaling 
@@ -46,7 +46,7 @@ management system. The issues I encounter:
 - input lag
 - access on weak internet and devices
 
-Yew exists because I can solve these problems. Namely, 
+Yew exists because I think can solve these problems. Namely, 
 I just need to make myself happy. 
 
 ## Virtues
@@ -65,7 +65,7 @@ I just need to make myself happy.
 10. Avoid overengineering and perfectionism
 
 Yew leans towards specification, rather than implementation, on workflow conventions as to 
-that interop with readily available software/toolchains, namely on Unix systems. 
+that interop with readily available software/toolchains, namely on Unix systems.
 
 Custom implementation and integration should be a backwards compatible extension.
 
