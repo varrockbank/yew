@@ -57,7 +57,9 @@ I just need to make myself happy.
 4. Metadata support for purposes of search / information retrieval 
 5. Accessible from small (smartphones) and large devices (laptops) on slow internet connection
 6. Maintain backward compatibility
-7. implementation follows specification. specification specification, specification. 
+7. implementation follows specification. specification specification, specification.
+   The specification should also provide guidance and recommendations on how implementations
+   should handle various behaviors.
 8. Amenable to information retrieval (search) and organization (tags) 
 9. Do not chase trends or appeal to compatibility for the sake of compatibility
 10. Avoid overengineering and perfectionism
@@ -236,4 +238,12 @@ folder depth
 
 Behavior beyond these limits are at the discretion of implementation.
 
+#### § alpha.6 Scratchpad 
+
+A special `scratchpad.md` can exist at the root directory.
+
+In a multi-user Yew repo, the scratchpad can be used to leave notes 
+behind for other developers like a sticky note on the refridgerator.
+
+Yew implementations should complain when the scratchpad is stale for too long.
 

@@ -1,11 +1,11 @@
-outline workflow for monthly recaps
-outline scratchpads other than lists
-outline pattern for documents
-recommend cloud-based services that are compatible with Yew
-consider text editor support
-outline how to publishing
-have a story of Gists and code snippets
-have a story on email interop
-have a story on spreadsheets
-have a story on other office suites
-have a story on integration with Remarkable devices
+[ ] outline workflow for monthly recaps
+[x] outline scratchpads other than lists
+[ ] outline pattern for documents
+[ ] recommend cloud-based services that are compatible with Yew
+[ ] consider text editor support
+[ ] outline how to publishing
+[ ] have a story of Gists and code snippets
+[ ] have a story on email interop
+[ ] have a story on spreadsheets
+[ ] have a story on other office suites
+[ ] have a story on integration with Remarkable devices
