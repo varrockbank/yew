@@ -1,4 +1,4 @@
-[ ] outline workflow for monthly recaps
+[x] outline workflow for monthly recaps
 [x] outline scratchpads other than lists
 [ ] outline pattern for documents
 [ ] recommend cloud-based services that are compatible with Yew

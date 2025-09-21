@@ -182,6 +182,26 @@ Yew does not care about time of day.
 
 `YYYY-MM-DD.md` may be supported in the future.
 
+### § alpha.1.8 monthly `recap.md`
+
+Each `YYYY/MM` directory should have`recap.md` file. 
+Around the near the end of the month, the user should populate
+such a file if one does not exist already.
+
+Yew implementations should remind and encourage users to populate this file.
+
+Users can update the recap file throughout the month, but 
+make sure that it is finalized around the end of the month. 
+
+### § alpha.1.9 Weekly recaps 
+
+If user wants to have recaps weekly or other time periods, they can 
+create files: `recap_1.md`, `recap_2.md` and so on and so forth.
+
+It is up to the user to decide whese these time periods start and end.
+It is up to the user's discretion when to create additional periodic 
+recaps. For me, I intend on creating a recap file at the end of the weekend. 
+
 ### § alpha.2 Media, pictures and non .MD files 
 
 Currently unsupported and ignored. Perhaps when we want to have a collection of files on a given
