@@ -1,32 +1,66 @@
 # Motivation
 
-I started grad school and sought to consistently snapshot my thoughts, both 
-private and intellectual. I hope to retroactively pinpoint the specific 
-time frame I developed certain ideas.
+I started grad school and sought to consistently snapshot my thoughts 
+private and intellectual. I hope to capture the evolution 
+of my beliefs and knowledge.
 
-Before this, I had a scattered and unstructured set of ad-hoc notes
-that would in all likelihood be lost in the entropy. The only way to search
-through the documents is to comprehensively look through them all. This
-mess also hindered incrementally building knowledge. It was taxing on my brain's 
-CPU and memory. 
+Before this I had unstructured and disorganized notes that disappeared into 
+the entropy. The only way to retrieve something is to exhaustively 
+scan everything. This is not conducive to incrementally building knowledge
+which requires accurately reflecting on prior knowledge. I relied heavily
+on my "first brain" which was unreliable and taxing. 
 
-Software-as-a-services come and go making the value prop of solving this problem.
-The two issues I face with these services is data portability and input lag.
+I hope to offload the cognitive overload by "writing the data to disk".
+This "second brain" and "personal knowledge management system" includes 
+a few different workflows / flow states which require different
+data structures.
 
-A knowledge management system is more than logging daily stream of thoughts in chronological order.
-It should have caches, the most common of which is lists of stuff such as a todo list.
+1. workflow: journaling 
+   - flow state: stream of thought of day-to-day 
+   - data structure: append-only list of logs, one log file per day.
+     This list is chronological. 
+2. workflow: reflection
+   - flow state: recapping and reflecting on journal entries over a 
+     weekly or monthly period 
+   - data structure: a summary document 
+3. workflow: scratchpad 
+   - flow state: need to quickly dump information down before forgetting
+   - data structure: a cache
+4. workflow: R&D 
+   - flow state: lots of information that are in flux
+   - data structure: a folder of documents and resources 
+5. workflow: lists
+   - flow state: shopping lists, TODO lists
+   - data structure: mutable lists 
+6. workflow: authoring
+   - flow state: distilling and explaining of a topic. The audience
+     can be for the future version of yourself. 
+   - data structure: editable set of documents
 
-## Overarching Ideas
+Software-as-a-services sell a perfected knowledge
+management system. The issues I encounter: 
+
+- Making everyone happy. As such, they have to handle every use-case
+  which means a steep learning curve and complexity. 
+- data portability and to a lesser degree data sovereignty
+- input lag
+- access on weak internet and devices
+
+Yew exists because I can solve these problems. Namely, 
+I just need to make myself happy. 
+
+## Virtues
 
 1. Plaintext files
 2. Directory structure as a means of organization
 3. Version control 
 4. Metadata support for purposes of search / information retrieval 
 5. Accessible from small (smartphones) and large devices (laptops) on slow internet connection
-6. Yew versions aim for backward compatibility
-7. Strive to be a specification rather than implementation 
-8. Encourages information retrieval (search) and organization (tags) 
+6. Maintain backward compatibility
+7. implementation follows specification. specification specification, specification. 
+8. Amenable to information retrieval (search) and organization (tags) 
 9. Do not chase trends or appeal to compatibility for the sake of compatibility
+10. Avoid overengineering and perfectionism
 
 Yew leans towards specification, rather than implementation, on workflow conventions as to 
 that interop with readily available software/toolchains, namely on Unix systems. 
@@ -201,9 +235,5 @@ folder depth
 : 10 
 
 Behavior beyond these limits are at the discretion of implementation.
-
-
-
-
 
 
