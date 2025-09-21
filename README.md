@@ -85,7 +85,7 @@ Files with `md` extension are assumed to be valid Markdown without validation.
 
 Every file should be named `YYYY_MM_DD.md` where `YYYY`is the year, `MM` is the month, `DD` is the day.
 
-This file should be placed in the following directory: `YYYY/MM/DD`. i.e. `2025/09/21/2025_09_21.md`
+This file should be placed in the following directory: `YYYY/MM`. i.e. `2025/09/2025_09_21.md`
 
 The following files collectively form an instance of Yew `Archive`. 
 `README.md` is user specified commentary about the Archive 
@@ -94,8 +94,7 @@ The following files collectively form an instance of Yew `Archive`.
    README.md
    2025/
       09/
-        21/
-            2025_09_21.md
+        2025_09_21.md
 ```
 
 More precisely, the name of the parent directory is the name of the `Archive`. In the 
@@ -106,8 +105,7 @@ following example "my_first_archive"
      README.md
      2025/
         09/
-          21/
-              2025_09_21.md
+          2025_09_21.md
 ```
 
 ### § alpha.2.1
@@ -119,7 +117,7 @@ This includes the following example: `2025/1/31` and `2025/12/1`.
 ### § alpha.2.2 Date 
 
 YYYY/MM/DD are not checked the be valid days. For example: 02/29 would be a valid date on a leap year but
-invalid on a regular year. Yew does not validate 2025/02/29 to be a valid date. 
+invalid on a regular year. Yew does not validate 2025/02/29 to be a valid date.
 
 In the future, Yew will validate the date. 
 
@@ -137,8 +135,8 @@ Metadata in README.md is ignored
 
 ### alpha.3 Media, pictures and non .MD files 
 
-Currently unsupported and ignored 
-
+Currently unsupported and ignored. Perhaps when we want to have a collection of files on a given
+day, we will reintroduce the `YYYY/MM/DD/` archive path.
 
 ### alpha.4 A Yew Project 
 
