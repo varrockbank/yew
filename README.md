@@ -1,59 +1,59 @@
 # Yew
 
-This project addresses the ~~problem~~ problems of personal knowledge management (PKM). Yew avoids the complexity of PKM systems by not attempting to solve
-the worlds' problems. 
+This project addresses the ~~problem~~ problems of personal knowledge management (PKM).
+Yew avoids their complexity by not attempting to solve the worlds' problems. 
 
-Yew is not even a system; it's a 
-method. Yew involves a set of guidelines/conventions on structuring directories and plaintext files. 
-Most functionality will come free from the Unix bin. Spoiler: Yew lends itself naturally to people who have a Git repo for
-each project in their life. 
+Yew is a method not a system. It outlines conventions on structuring directories and plaintext files. 
+Most functionality come free from the Unix bin and users can bring their own 
+editing interface.
+Spoiler: Yew lends itself naturally to those who have a Git repo for
+each life project. 
 
 ### Problem 
 
-PKM systems attempt to assimilate and monopolize one's entire digital footprint.
+PKM systems try to assimilate and monopolize one's entire digital footprint.
 
-The first dimension of complexification is that these systems treat PKM as a monolith that can be tamed,
-cross-cutting across disparate projects.
+Their first source of complexity is wrangling PKM as a monolith,
+cross-cutting disparate projects.
 
-The second dimension of complexification is attempting to accommodate every client and their use case.
-By making everyone happy, PKMs make no one happy. Even adherents find themselves 
-bikeshedding and chasing the long-tail of productivity.
+The second is accommodating every client use case.
+In making everyone happy, no one is happy. 
+Even adherents find themselves bikeshedding and chasing the long-tail of productivity.
 
 Fortunately with Yew I just need to make myself happy. 
 
 ### Solution
 Yew federates knowledge management to individual projects and their 
-respective file directories. In doing so projects are self-contained.
+respective file directories. This containerization provides portability 
+and frees project projects to define their own PKM environment.
 
 This is not exotic to coders who automatically instantiate a Git repo for each
 "project" in their life. 
 
 This project-oriented paradigm is exceedingly powerful. 
 
-A strict boundary is enforced 
-between private, professional and academic projects. Why on earth would you want to
-hyperlink between your vacation and a college course anyway? Monoliths  
-punishes heterogeny, while federation promote internal consistency (projects are smaller). 
+A natural boundary induces compartmentalization of projects. Why would you want to
+hyperlink between your vacation planning and a college course anyway? A unified monolithic 
+knowledge graph punishes heterogeny while federation promote internal consistency in individual project.
 Yew is minimally prescriptive leaving more discretion to individual projects. After all,
 a video game project and an English writing course involve different workflows and should be 
 accommodated differently. 
 
-Yew couples KPM to the project. PKM files are co-located within a project directory,
-rather than being standalone entities. i.e. Wiki or an exclusive set of PKM
-files for use with some proprietary note-taking app. In a way, Yew can be thought
-of a generalization of `README.md`. 
+Yew couples PKM to the project by co-locating PKM files. This contrasts 
+with a standalone source-of-truth. i.e. i.e. wiki or an exclusive PKM repo locked into proprietary note-taking app. 
+Thus, Yew is a generalization of `README.md`. 
 
-Yew embraces Unix ethos. Meaning delegating implementation to 
-readily available toolchains and interop. The Yew Project is a specification 
-first-and-foremost and any "extracurricular" implementations follow thereafter.
+By embracing the Unix ethos, software interop is well-defined and 
+mature tooling is already available in surplus. The Yew Project is a specification 
+first and implementation complementary. 
 
-see `journal/manifesto.md` for background context and in-depth commentary
-on underlying philosophy. 
+see `journal/manifesto.md` for context on the paradigm and reasoning 
+behind design choices. 
 
 ###  Survey 
 
-The Yew Project identified various modalities which involve
-different flow states which should be partioned into different spaces.  
+Various modalities of knowledge management are considered. These 
+involve different flow states which demand different workflows and spaces.
 
 1. space: diary
 
@@ -272,7 +272,7 @@ where `drafts` and `finalized` documents are authored being published.
 
 Users can use arbitrary directories and documents.
 
-#### alpha.7.1 `scratchpad.md`, `clipboard.md`
+#### § alpha.7.1 `scratchpad.md`, `clipboard.md`
 
 It is recommended that `journal/scratchpad.md` be reserved to jot down 
 ideas. As such, it is recommended that this file is `gitignore`d.
