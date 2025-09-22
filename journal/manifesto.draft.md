@@ -61,6 +61,8 @@ the practice of "devlogs".
 8. Amenable to information retrieval (search) and organization (tags)
 9. Do not chase trends or appeal to compatibility for the sake of compatibility
 10. Avoid overengineering and perfectionism
+11. Local-ish first
+12. READABLE plaintext source and WRITABLE with plaintext editor
 
 Yew leans towards specification, rather than implementation, on workflow conventions as to
 that interop with readily available software/toolchains, namely on Unix systems.

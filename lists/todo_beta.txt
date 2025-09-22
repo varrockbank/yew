@@ -3,3 +3,4 @@
 [ ] Lists
     [ ] Adding commentary in list files
 [ ] outline how to publishing
+[ ] decide on a markup syntax

@@ -44,9 +44,9 @@ Yew couples PKM to the project by co-locating PKM files. This contrasts
 with a standalone source-of-truth. i.e. i.e. wiki or an exclusive PKM repo locked into proprietary note-taking app. 
 Thus, Yew is a generalization of `README.md`. 
 
-By embracing the Unix ethos, software interop is well-defined and 
-mature tooling is already available in surplus. The Yew Project is a specification 
-first and implementation complementary. 
+The Yew Project is a toolchain-agnostic specification first-and-foremost and 
+custom implementation is complementary. By embracing the Unix ethos, 
+software interop is well-defined and mature tooling is already available in surplus.
 
 see `journal/manifesto.md` for context on the paradigm and reasoning 
 behind design choices. 

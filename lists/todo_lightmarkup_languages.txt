@@ -1,0 +1,11 @@
+
+[x] .textile -- gem install RedCloth (https://github.com/jgarber/redcloth)
+[x] .rdoc -- gem install rdoc -v 3.6.1
+[x] .creole -- gem install creole (https://github.com/larsch/creole)
+[x] .rst -- pip install docutils
+[x] .pod -- Pod::Simple::XHTML comes with Perl >= 5.10. Lower versions should install Pod::Simple from CPAN.
+[x] .mediawiki, .wiki -- gem install wikicloth (https://github.com/nricciar/wikicloth)
+
+[ ] .markdown, .mdown, .mkdn, .md -- gem install commonmarker (https://github.com/gjtorikian/commonmarker)
+[ ] .org -- gem install org-ruby (https://github.com/wallyqs/org-ruby)
+[ ] .asciidoc, .adoc, .asc -- gem install asciidoctor (http://asciidoctor.org)
