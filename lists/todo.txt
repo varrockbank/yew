@@ -10,3 +10,8 @@
 [ ] have a story on other office suites
 [ ] have a story on integration with Remarkable devices
 [ ] evaluate if Yew can really just be an Obsidian template
+[ ] Currently, Yew specification is not machine parseable. When machine-parseability is a feature, the specification will be moved into a separate file.
+[ ] linting / formatting and other scripts
+[ ] use treeview for directory structure examples
+
+

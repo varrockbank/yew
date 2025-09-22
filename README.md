@@ -1,8 +1,29 @@
-# Motivation
+# Yew
+
+The name takes inspiration from the tree popularized by RuneScape. 
+Namely, the yew log. Yew takes some inspiration from 
+the practice of "devlogs".
+
+Yew is a method of personal knowledge management (PKN). The unit of definition
+of Yew is at the project level. This approach is different from typical PKM systems  
+which attempt to fully encapsulate your digital footprint and span all your projects
+all at once. The projects I was dealing included coding projects 
+and academic courses. Additionally, I treated my private life as a project 
+in the context of a "Yew Project". These are fundamentally different kinds of projects
+with different workflows and stream of thoughts. Yew focuses on the core knowledge managemenet
+issues that crosscuts projects without attempting to handle every use-case and
+creating complexity. 
+
+Yew is grounded in plaintext files. The method involves a set of conventions
+around structuring files and folders. By embracing the Unix ethos, 
+there are readily available software toolchains and interop. It assumed that a Yew Project 
+is equivalent to a Git repository. 
+
+##  Motivation
 
 I started grad school and sought to consistently snapshot my thoughts 
 private and intellectual. I hope to capture the evolution 
-of my beliefs and knowledge.
+of my beliefs and knowledge akin to a "devlog". 
 
 Before this I had unstructured and disorganized notes that disappeared into 
 the entropy. The only way to retrieve something is to exhaustively 
@@ -15,24 +36,24 @@ This "second brain" and "personal knowledge management system" includes
 a few different workflows / flow states / spaces which require different
 data structures.
 
-1. workflow: journaling 
+1. workflow: diary 
    - flow state: stream of thought of day-to-day 
    - data structure: append-only list of logs, one log file per day.
      This list is chronological. 
-2. workflow: reflection
-   - flow state: recapping and reflecting on journal entries over a 
+2. workflow: diary recap 
+   - flow state: recapping and reflecting on diary entries over a 
      weekly or monthly period 
    - data structure: a summary document 
-3. workflow: scratchpad 
+3.workflow: scratchpad 
    - flow state: need to quickly dump information down before forgetting
    - data structure: a cache
-4. workflow: R&D 
+4. workflow: R&D  
    - flow state: lots of information that are in flux
    - data structure: a folder of documents and resources 
 5. workflow: lists
    - flow state: shopping lists, TODO lists
    - data structure: mutable lists 
-6. workflow: authoring
+6. workflow: journaling and authoring
    - flow state: distilling and explaining of a topic. The audience
      can be for the future version of yourself. 
    - data structure: editable set of documents
@@ -74,14 +95,7 @@ This repository should be "self-hosting" and serve as a valid Yew Project.
 ## Legal
 
 No support is provided. The author bears no responsibility for this system's usage. 
-Don't plagiarize without citation. 
-
-## Yew 
-
-The name takes inspiration from the tree popularized by RuneScape. 
-
-Currently, Yew specification is not machine parseable. 
-When machine-parseability is a feature, the specification will be moved into a separate file.
+Don't plagiarize without citation.
 
 ## Specification
 
@@ -98,6 +112,8 @@ i.e. a table of content
 - In general, labels `x.0.*` are reserved for version `x` to make self-referential specifications
 
 All other labels `x.*` are reserved and indexed at the discretion of spec version `x`.
+Versions should not "re-index", reusing old label indexes when removing obsolete indexes.
+This should be finalized between alpha and production versions.
 
 if "x" contains the substring "alpha", x is an alpha version. Alpha versions are draft proposals 
 and subject to being overwritten / mutated at any time and cannot be relied upon. 
@@ -138,49 +154,26 @@ Files with `md` extension are assumed to be valid Markdown, without validation.
 
 Every file should be named `YYYY_MM_DD.md` where `YYYY`is the year, `MM` is the month, `DD` is the day.
 
-This file should be placed in the following directory: `YYYY/MM`. i.e. `2025/09/2025_09_21.md`
-
-The following files collectively form an instance of Yew `Archive`. 
-A optional `README.md` can contain user specified commentary about the Archive
+This file should be placed in the following directory: `diary/YYYY/MM`. i.e. `diary/2025/09/2025_09_21.md`
 
 ```
-   README.md
+diary/
    2025/
       09/
         2025_09_21.md
 ```
 
-More precisely, the name of the parent directory is the name of the `Archive`. In the 
-following example "my_first_archive"
-
-```
-   my_first_archive/
-     README.md
-     2025/
-        09/
-          2025_09_21.md
-```
-
 ### § alpha.1.4
 
-Files that do not match the pattern `YYYY/MM/DD/YYYY_MM_DD.md` are to be ignored by the Yew toolchain. 
-
-This includes the following example: `2025/1/31` and `2025/12/1`.
+Files that do not match the pattern `diary/YYYY/MM/DD/YYYY_MM_DD.md` are to be ignored by Yew implementations. 
+i.e. `diary/2025/1/31` and `diary/2025/12/1`.
 
 ### § alpha.1.5 Dates 
 
 YYYY/MM/DD are not checked the be valid days. For example: 02/29 would be a valid date on a leap year but
 invalid on a regular year. Yew does not validate 2025/02/29 to be a valid date.
 
-In the future, Yew will validate the date. 
-
-### § alpha.1.6 Time 
-
-Yew does not care about time of day. 
-
-### § alpha.1.7 
-
-`YYYY-MM-DD.md` may be supported in the future.
+In the future, Yew will validate the date.
 
 ### § alpha.1.8 monthly `recap.md`
 
@@ -206,20 +199,6 @@ recaps. For me, I intend on creating a recap file at the end of the weekend.
 
 Currently unsupported and ignored. Perhaps when we want to have a collection of files on a given
 day, we will reintroduce the `YYYY/MM/DD/` archive path.
-
-### § alpha.3 A Yew Project 
-
-A Yew `Project` contains 1 or more named log archives and a README.md file.
-
-```
-   README.md 
-   personal_diary/
-      ...
-   school/
-      ... 
-   work/
-      ...
-```
 
 ### § alpha.4 Version Control
 
@@ -263,7 +242,7 @@ Behavior beyond these limits are at the discretion of implementation.
 A special `scratchpad.md` can exist at the root directory.
 
 In a multi-user Yew repo, the scratchpad can be used to leave notes 
-behind for other developers like a sticky note on the refridgerator.
+behind for other developers like a sticky note on the refrigerator.
 
 It is recommended to `gitignore` the scratchpad.md file.
 
