@@ -33,29 +33,42 @@ on my "first brain" which was unreliable and taxing.
 
 I hope to offload the cognitive overload by "writing the data to disk".
 This "second brain" and "personal knowledge management system" includes 
-a few different workflows / flow states / spaces which require different
-data structures.
+a various spaces which involve different workflows, flow states, and 
+data structures. 
 
-1. workflow: diary 
-   - flow state: stream of thought of day-to-day 
-   - data structure: append-only list of logs, one log file per day.
-     This list is chronological. 
-2. workflow: diary recap 
-   - flow state: recapping and reflecting on diary entries over a 
-     weekly or monthly period 
-   - data structure: a summary document 
-3.workflow: scratchpads
+1. space: diary
+
+   - workflow: log
+
+     - flow state: stream of thought of day-to-day
+     - data structure: append-only list of logs, one log file per day.
+           This list is chronological. 
+
+   - workflow: recap
+   
+     - flow state: reflecting on diary entries over some time period  
+     - data structure: a summary document 
+
+2. workflow: scratchpads
+
    - flow state: need to dump ephemeral down before forgetting
-   - data structure: a cache 
-4. workflow: R&D  
-   - flow state: lots of information that are in flux
-   - data structure: a folder of documents and resources 
-5. workflow: lists
+   - data structure: a cache
+
+4. space: journal
+
+    - workflow: R&D  
+      - flow state: information gathering and organizing
+      - data structure: a folder of documents and resources 
+    - workflow: learning 
+      - flow state: distilling and explaining of a topic. The audience
+        can be for the future version of yourself.
+
+5. space: lists
    - flow state: shopping lists, TODO lists
    - data structure: mutable lists 
-6. workflow: journaling and authoring
-   - flow state: distilling and explaining of a topic. The audience
-     can be for the future version of yourself. 
+
+6. space: blog
+   - flow state: publishing finalized documents from journal 
    - data structure: editable set of documents
 
 Software-as-a-services sell a perfected knowledge
@@ -134,19 +147,20 @@ release_date
 - `alpha.y` labels, where y is a natural number, are for major definitions
 - `alpha.y.z` labels, where z is a natural number, are correlaries of y
 
-### § alpha.1 logs
+### § alpha.1 Diary Space
 
-Logs are chronological. The granularity is on a day-to-day basis.
-Each log file should correspond to a specific day.
+Directory `diary` is reserved for the Diary space. 
+This space is for chronological entry with the granularity is on a 
+day-to-day basis. An entry file should correspond to a specific day.
 
-Users can modify a log file as much as they want on a given day, but 
-should avoid modify a log file once the day is over. 
+Users can modify an entry file as much as they want on a given day but 
+should avoid modifying an entry file once the day is over. 
 
-### § alpha.1.1 log format
+### § alpha.1.1 format
 
 `md` extension and markdown is used for log files.  Files without `md` extensions are ignored.
 
-#### § alpha.1.2 log file validation 
+#### § alpha.1.2 entry file validation 
 
 Files with `md` extension are assumed to be valid Markdown, without validation.
 
