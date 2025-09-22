@@ -1,40 +1,59 @@
 # Yew
 
-The name takes inspiration from the tree popularized by RuneScape. 
-Namely, the yew log. Yew takes some inspiration from 
-the practice of "devlogs".
+This project addresses the ~~problem~~ problems of personal knowledge management (PKM). Yew avoids the complexity of PKM systems by not attempting to solve
+the worlds' problems. 
 
-Yew is a method of personal knowledge management (PKN). The unit of definition
-of Yew is at the project level. This approach is different from typical PKM systems  
-which attempt to fully encapsulate your digital footprint and span all your projects
-all at once. The projects I was dealing included coding projects 
-and academic courses. Additionally, I treated my private life as a project 
-in the context of a "Yew Project". These are fundamentally different kinds of projects
-with different workflows and stream of thoughts. Yew focuses on the core knowledge managemenet
-issues that crosscuts projects without attempting to handle every use-case and
-creating complexity. 
+Yew is not even a system; it's a 
+method. Yew involves a set of guidelines/conventions on structuring directories and plaintext files. 
+Most functionality will come free from the Unix bin. Spoiler: Yew lends itself naturally to people who have a Git repo for
+each project in their life. 
 
-Yew is grounded in plaintext files. The method involves a set of conventions
-around structuring files and folders. By embracing the Unix ethos, 
-there are readily available software toolchains and interop. It assumed that a Yew Project 
-is equivalent to a Git repository. 
+### Problem 
 
-##  Motivation
+PKM systems attempt to assimilate and monopolize one's entire digital footprint.
 
-I started grad school and sought to consistently snapshot my thoughts 
-private and intellectual. I hope to capture the evolution 
-of my beliefs and knowledge akin to a "devlog". 
+The first dimension of complexification is that these systems treat PKM as a monolith that can be tamed,
+cross-cutting across disparate projects.
 
-Before this I had unstructured and disorganized notes that disappeared into 
-the entropy. The only way to retrieve something is to exhaustively 
-scan everything. This is not conducive to incrementally building knowledge
-which requires accurately reflecting on prior knowledge. I relied heavily
-on my "first brain" which was unreliable and taxing. 
+The second dimension of complexification is attempting to accommodate every client and their use case.
+By making everyone happy, PKMs make no one happy. Even adherents find themselves 
+bikeshedding and chasing the long-tail of productivity.
 
-I hope to offload the cognitive overload by "writing the data to disk".
-This "second brain" and "personal knowledge management system" includes 
-a various spaces which involve different workflows, flow states, and 
-data structures. 
+Fortunately with Yew I just need to make myself happy. 
+
+### Solution
+Yew federates knowledge management to individual projects and their 
+respective file directories. In doing so projects are self-contained.
+
+This is not exotic to coders who automatically instantiate a Git repo for each
+"project" in their life. 
+
+This project-oriented paradigm is exceedingly powerful. 
+
+A strict boundary is enforced 
+between private, professional and academic projects. Why on earth would you want to
+hyperlink between your vacation and a college course anyway? Monoliths  
+punishes heterogeny, while federation promote internal consistency (projects are smaller). 
+Yew is minimally prescriptive leaving more discretion to individual projects. After all,
+a video game project and an English writing course involve different workflows and should be 
+accommodated differently. 
+
+Yew couples KPM to the project. PKM files are co-located within a project directory,
+rather than being standalone entities. i.e. Wiki or an exclusive set of PKM
+files for use with some proprietary note-taking app. In a way, Yew can be thought
+of a generalization of `README.md`. 
+
+Yew embraces Unix ethos. Meaning delegating implementation to 
+readily available toolchains and interop. The Yew Project is a specification 
+first-and-foremost and any "extracurricular" implementations follow thereafter.
+
+see `journal/manifesto.md` for background context and in-depth commentary
+on underlying philosophy. 
+
+###  Survey 
+
+The Yew Project identified various modalities which involve
+different flow states which should be partioned into different spaces.  
 
 1. space: diary
 
@@ -70,40 +89,6 @@ data structures.
 6. space: blog
    - flow state: publishing finalized documents from journal 
    - data structure: editable set of documents
-
-Software-as-a-services sell a perfected knowledge
-management system. The issues I encounter: 
-
-- Making everyone happy. As such, they have to handle every use-case
-  which means a steep learning curve and complexity. 
-- data portability and to a lesser degree data sovereignty
-- input lag
-- access on weak internet and devices
-
-Yew exists because I think can solve these problems. Namely, 
-I just need to make myself happy. 
-
-## Virtues
-
-1. Plaintext files
-2. Directory structure as a means of organization
-3. Version control 
-4. Metadata support for purposes of search / information retrieval 
-5. Accessible from small (smartphones) and large devices (laptops) on slow internet connection
-6. Maintain backward compatibility
-7. implementation follows specification. specification specification, specification.
-   The specification should also provide guidance and recommendations on how implementations
-   should handle various behaviors.
-8. Amenable to information retrieval (search) and organization (tags) 
-9. Do not chase trends or appeal to compatibility for the sake of compatibility
-10. Avoid overengineering and perfectionism
-
-Yew leans towards specification, rather than implementation, on workflow conventions as to 
-that interop with readily available software/toolchains, namely on Unix systems.
-
-Custom implementation and integration should be a backwards compatible extension.
-
-This repository should be "self-hosting" and serve as a valid Yew Project.  
 
 ## Legal
 
@@ -279,7 +264,7 @@ Behavior beyond these limits are at the discretion of implementation.
 In a multi-user setting, `fridgenote.md` can be used to leave notes 
 behind for other developers like a sticky note on the refrigerator.
 
-#### § alpha.7 Journal 
+#### § alpha.7 Journal Space
 
 A `journal` directory is a space for distilled and collected thoughts. 
 This does not preclude drafts. In fact, the `journal` space is 
