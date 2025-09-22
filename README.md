@@ -279,4 +279,14 @@ ideas. As such, it is recommended that this file is `gitignore`d.
 
 `journal/clipboard.md` is the same idea but for copy and pastes.
 
+#### § alpha.7.2 journal versioning
+
+Drafts should be suffixed `.draft.md`
+Finalized versions should be suffixed `.final.md`
+
+#### § alpha.7.3 Authoring Date
+
+This should be in the file as a header or metadata (TBD)
+
+
 

@@ -13,5 +13,6 @@
 [ ] Currently, Yew specification is not machine parseable. When machine-parseability is a feature, the specification will be moved into a separate file.
 [ ] linting / formatting and other scripts
 [ ] use treeview for directory structure examples
+[ ] investigate problems with filenamed .draft.md
 
 
