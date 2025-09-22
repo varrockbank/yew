@@ -32,7 +32,8 @@ This is not exotic to coders who automatically instantiate a Git repo for each
 
 This project-oriented paradigm is exceedingly powerful. 
 
-A natural boundary induces compartmentalization of projects. Why would you want to
+After all, knowledge management is about compartmentalization of complexity.
+A natural boundary arises between projects. Why would you want to
 hyperlink between your vacation planning and a college course anyway? A unified monolithic 
 knowledge graph punishes heterogeny while federation promote internal consistency in individual project.
 Yew is minimally prescriptive leaving more discretion to individual projects. After all,

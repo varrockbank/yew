@@ -1,0 +1,5 @@
+# These are unfinished items blocking beta version
+
+[ ] Lists
+    [ ] Adding commentary in list files
+[ ] outline how to publishing

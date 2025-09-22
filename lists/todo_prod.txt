@@ -1,0 +1,2 @@
+[ ] investigate problems with filenamed .draft.md
+[ ] evaluate if Yew can really just be an Obsidian template

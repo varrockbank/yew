@@ -1,18 +1,5 @@
 [x] outline workflow for monthly recaps
 [x] outline scratchpads other than lists
 [x] outline pattern for documents.
-[ ] recommend cloud-based services that are compatible with Yew
-[ ] consider text editor support
-[ ] outline how to publishing
-[ ] have a story of Gists and code snippets
-[ ] have a story on email interop
-[ ] have a story on spreadsheets
-[ ] have a story on other office suites
-[ ] have a story on integration with Remarkable devices
-[ ] evaluate if Yew can really just be an Obsidian template
-[ ] Currently, Yew specification is not machine parseable. When machine-parseability is a feature, the specification will be moved into a separate file.
-[ ] linting / formatting and other scripts
-[ ] use treeview for directory structure examples
-[ ] investigate problems with filenamed .draft.md
 
 

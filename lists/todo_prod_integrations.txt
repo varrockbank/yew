@@ -1,0 +1,8 @@
+#
+[ ] recommend cloud-based services that are compatible with Yew
+[ ] consider text editor support
+[ ] have a story of Gists and code snippets
+[ ] have a story on email interop
+[ ] have a story on spreadsheets
+[ ] have a story on other office suites
+[ ] have a story on integration with Remarkable devices
