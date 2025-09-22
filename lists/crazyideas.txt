@@ -1,1 +1,3 @@
 sync with bookmarks folder in a browser
+program that verifies validate of a Yew Directory
+remapping.md for Yew toolchain to remap reserved folder names that conflict.

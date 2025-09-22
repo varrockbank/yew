@@ -207,6 +207,22 @@ index values are "lexicographically ordered". `week1`, `week2`, `week3` would al
 Currently unsupported and ignored. Perhaps when we want to have a collection of files on a given
 day, we will reintroduce the `YYYY/MM/DD/` archive path.
 
+### § alpha.3 Yew Project
+
+A directory which follows the specification is a valid Yew Project.
+
+It is generally recommended that the Yew Project be at the root level 
+of a project, co-existing with any code in that directory. 
+
+In instances where reserved Yew directories conflict, such as coding project that 
+has the directory `journal`, one can push the Yew directory down into a directory named
+`yew` to avoid this conflict. Obviously, this directory name can be anything and if `yew` also
+conflicts then the user can specify any other available directory name.
+
+Other techniques such as a metadata file, i.e. `remapping.json`, could be fed to the Yew toolchain 
+to deal with conflicts and allow arbitrary naming of the various spaces. However, we avoid 
+this overengineed solution.
+
 ### § alpha.4 Version Control
 
 Currently, this comes free because of plaintext files. 
