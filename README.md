@@ -189,11 +189,18 @@ make sure that it is finalized around the end of the month.
 ### § alpha.1.9 Weekly recaps 
 
 If user wants to have recaps weekly or other time periods, they can 
-create files: `recap_1.md`, `recap_2.md` and so on and so forth.
+create "indexed" recap files: `recap_1.md`, `recap_2.md` and so on and so forth.
 
-It is up to the user to decide whese these time periods start and end.
+It is up to the user to decide when these time periods start and end.
 It is up to the user's discretion when to create additional periodic 
 recaps. For me, I intend on creating a recap file at the end of the weekend. 
+
+The indexing does not need to start from 1. Suppose this is the 3rd week of the 
+month. Then the user can specify `recap_3.md`.
+
+The indexing also does not need to be `1`, `2`, `3`. The goal is that these 
+index values are "lexicographically ordered". `week1`, `week2`, `week3` would also work.
+
 
 ### § alpha.2 Media, pictures and non .MD files 
 
