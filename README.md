@@ -44,9 +44,9 @@ data structures.
    - flow state: recapping and reflecting on diary entries over a 
      weekly or monthly period 
    - data structure: a summary document 
-3.workflow: scratchpad 
-   - flow state: need to quickly dump information down before forgetting
-   - data structure: a cache
+3.workflow: scratchpads
+   - flow state: need to dump ephemeral down before forgetting
+   - data structure: a cache 
 4. workflow: R&D  
    - flow state: lots of information that are in flux
    - data structure: a folder of documents and resources 
@@ -237,14 +237,24 @@ folder depth
 
 Behavior beyond these limits are at the discretion of implementation.
 
-#### § alpha.6 Scratchpad 
+#### § alpha.6 `fridgenote.md`
 
-A special `scratchpad.md` can exist at the root directory.
-
-In a multi-user Yew repo, the scratchpad can be used to leave notes 
+In a multi-user setting, `fridgenote.md` can be used to leave notes 
 behind for other developers like a sticky note on the refrigerator.
 
-It is recommended to `gitignore` the scratchpad.md file.
+#### § alpha.7 Journal 
 
-Yew implementations should complain when the scratchpad is stale for too long.
+A `journal` directory is a space for distilled and collected thoughts. 
+This does not preclude drafts. In fact, the `journal` space is 
+where `drafts` and `finalized` documents are authored being published.
+
+Users can use arbitrary directories and documents.
+
+#### alpha.7.1 `scratchpad.md`, `clipboard.md`
+
+It is recommended that `journal/scratchpad.md` be reserved to jot down 
+ideas. As such, it is recommended that this file is `gitignore`d.
+
+`journal/clipboard.md` is the same idea but for copy and pastes.
+
 
